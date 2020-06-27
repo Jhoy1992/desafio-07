@@ -1,4 +1,4 @@
 const formatDate = (date: Date): string =>
-  new Intl.DateTimeFormat('pt-BR').format(new Date(date));
+  new Date(date).toLocaleDateString('pt-BR');
 
 export default formatDate;
