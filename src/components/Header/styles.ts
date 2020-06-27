@@ -17,6 +17,14 @@ export const Container = styled.div<ContainerProps>`
     justify-content: space-between;
 
     nav {
+      display: flex;
+
+      div {
+        & + div {
+          margin-left: 32px;
+        }
+      }
+
       a {
         color: #fff;
         text-decoration: none;
@@ -33,4 +41,11 @@ export const Container = styled.div<ContainerProps>`
       }
     }
   }
+`;
+
+export const Hover = styled.hr`
+  height: 2px;
+  border-color: #ff872c;
+  margin-top: 10px;
+  transition: all 0.2s;
 `;
